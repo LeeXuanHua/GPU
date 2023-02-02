@@ -15,6 +15,12 @@ Default parameters are specified in
 You can overwrite those default parameters using a YAML file like
 [`configs/mpiigaze/lenet_train.yaml`](configs/mpiigaze/lenet_train.yaml).
 
+### Download the dataset and preprocess it
+
+```bash
+bash scripts/download_mpiigaze_dataset.sh
+python tools/preprocess_mpiigaze.py --dataset datasets/MPIIGaze -o datasets/
+```
 
 ### Training and Evaluation
 
