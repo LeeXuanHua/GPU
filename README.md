@@ -24,11 +24,16 @@ python tools/preprocess_mpiigaze.py --dataset datasets/MPIIGaze -o datasets/
 
 ### Training and Evaluation
 
+#### lenet
 ```bash
 python train.py --config configs/mpiigaze/lenet_train.yaml
 python evaluate.py --config configs/mpiigaze/lenet_eval.yaml
 ```
-
+#### resnet
+```bash
+python train.py --config configs/mpiigaze/resnet_preact_train.yaml
+python evaluate.py --config configs/mpiigaze/resnet_preact_eval.yaml
+```
 
 ### Demo
 
